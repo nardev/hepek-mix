@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/share_activity_layout"
+    >
+
+   	   
+    <!-- Text edit with autocomplete Facebook contacts feature -->
+    
+    <AutoCompleteTextView xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/share_description"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:hint="@string/share_description_hint"
+    android:textColorHint="#FDF6D8"
+    android:maxLength="50"
+    android:inputType="textMultiLine" 
+    android:minLines="3" 
+    android:maxLines="3"/>
+    
+    <ImageView
+        android:id="@+id/hepekShareImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/share_description"
+        android:contentDescription="@string/hepek_image_description"
+        android:layout_alignBottom="@id/share_description"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="15dip"
+        android:src="@drawable/personblack"
+         />
+    
+       
+    
+</RelativeLayout>

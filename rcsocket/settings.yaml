@@ -1,0 +1,85 @@
+mqtt_host: 
+mqtt_port: "1883"
+password: 
+username: 
+listen: 
+  0: 
+    a: 
+      false: 1364
+      true: 1361
+    b: 
+      false: 4436
+      true: 4433
+    c: 
+      false: 5204
+      true: 5201
+    d: 
+      false: 5396
+      true: 5393
+  1: 
+    a: 
+      false: 4195668
+      true: 4195665
+    b: 
+      false: 4198740
+      true: 4198737
+    c: 
+      false: 4199508
+      true: 4199505
+    d: 
+      false: 4199700
+      true: 4199697
+  2: 
+    a: 
+      false: 1049940
+      true: 1049937
+    b: 
+      false: 1053012
+      true: 1053009
+    c: 
+      false: 1053780
+      true: 1053777
+    d: 
+      false: 1053972
+      true: 1053969
+  3: 
+    a: 
+      false: 263508
+      true: 263505
+    b: 
+      false: 266580
+      true: 266577
+    c: 
+      false: 267348
+      true: 267345
+    d: 
+      false: 267540
+      true: 267537
+  4: 
+    a: 
+      false: 66900
+      true: 66897
+    b: 
+      false: 69972
+      true: 69969
+    c: 
+      false: 70740
+      true: 70737
+    d: 
+      false: 70932
+      true: 70929
+  5: 
+    a: 
+      false: 17748
+      true: 17759
+    b: 
+      false: 20820
+      true: 20817
+    c: 
+      false: 21588
+      true: 21585
+    d: 
+      false: 21780
+      true: 21777
+  topic: rccontrol
+

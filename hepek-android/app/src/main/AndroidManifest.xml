@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ba.ima.hepek"
+    android:versionCode="14"
+    android:versionName="1.0" >
+
+    <!-- Supporting 2.2.x and above -->
+    <!-- Targeting for 4.1.x -->
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="16" />
+
+    <!-- Permissions -->
+    
+    <!-- INTERNET access for sockets (Might communicate remotely) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <!-- Permissions the Application Requires -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- CAMERA ACCESS for FLASHLIGHT (and maybe photo taking in future) -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- VIBRATE access for some fancy effects -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <permission android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <!-- MODIFY_AUDIO_SETTINGS access for some fancy effects -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+              
+   	 
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity android:name="ba.ima.hepek.SplashScreen" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ba.ima.hepek.MainActivity"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="ba.ima.hepek.ShareHepekActivity"
+            android:label="@string/share_activity_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+            
+            </activity>
+
+        <!-- Mqtt Service -->
+        <service android:name="org.eclipse.paho.android.service.MqttService">
+        </service>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hepek</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="share_activity_name">Hepek Sharing</string>
+    <string name="share_description_hint">Why and who did you hepek\'d?</string>
+    <string name="hepek_image_description">Hepek\'d picture!</string>
+
+</resources>
